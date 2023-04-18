@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="donationpage.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Quattrocento&family=Raleway:ital,wght@1,500&display=swap"
+    rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Donate for Girl Education</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Donate</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <span class="donate">Make a Donation</span>
+        <p>Together we can make a difference in the lives of girls around the world.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+            <label for="amount">Donation Amount:</label>
+            <select id="amount" name="amount">
+                <option value="10">$10</option>
+                <option value="25">$25</option>
+                <option value="50">$50</option>
+                <option value="100">$100</option>
+                <option value="custom">Custom Amount</option>
+            </select>
+
+            <label for="custom-amount">Custom Amount:</label>
+            <input type="text" id="custom-amount" name="custom-amount" placeholder="Enter custom amount">
+
+            <label for="card-number">Credit/Debit Card Number:</label>
+            <input type="text" id="card-number" name="card-number" placeholder="" required>
+
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+
+            <input type="submit" value="Donate Now">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Donate for Girl Education</p>
+    </footer>
+</body>
+
+</html>
